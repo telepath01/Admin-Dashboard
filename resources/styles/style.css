@@ -1,209 +1,266 @@
+@media screen and (max-width: 600px) {
+}
 body {
-  border: 1px solid black;
-  width: 100%;
-  height: 100%;
+  background-color: rgb(97, 97, 97);
+  width: 1895px;
+  height: 988px;
   font-family: sans-serif;
 }
 
+/* The sidebar starts here 
 
-.admin-container {
+*/
+.page-block {
   display: grid;
-  grid-template-columns: 13em repeat(1, 1fr);
-  grid-template-rows:   9em repeat(1, 1fr);
+  grid-template-columns: 10% 60% 30%;
+  grid-template-rows: 15% repeat(1, 1fr);
   grid-template-areas:
-    "side-bar header"
-    "side-bar main"
-    "side-bar main";
+    "sidebar heading heading"
+    "sidebar main announce";
 }
-
-/* Sidebar Complete */
 .sidebar-container {
   display: grid;
   background-color: rgb(72, 72, 255);
-  font-weight: bold;
-  grid-area: side-bar;
-  grid-template-rows: 1fr;
-}
-.sb-items {
-  display: grid;
-  grid-template-columns: 1, 1fr;
-  grid-template-rows: 6em 1fr 50px 1fr;
+  grid-area: sidebar;
+  grid-template-rows: 10vh repeat(2, 1fr);
   grid-template-areas:
-    "dash"
-    "section1"
-    "."
-    "section2";
-  padding: 1em;
+    "a"
+    "b"
+    "c";
+  align-items: center;
 }
-.dash {
-  text-decoration: underline;
-  grid-area: dash;
-  font-size: 1.5em;
-}
-.section1 {
-  grid-area: section1;
-}
-.section2 {
-  grid-area: section2;
-}
-
-/* Header section */
-.header.container {
+.sidebar-heading {
   display: grid;
-  grid-area: header;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(2,1fr);
-  grid-template-areas: 
-  'top top'
-  'bottom bottom';
+  grid-area: a;
 }
-.header-top {
-  display: grid;
-  grid-area: top;
-  grid-template-columns: repeat(2,1fr);
-  
-  
-}
-.search-input > input {
-  width: 25rem;
-  height: 2rem;
-  border-radius: 18px;
-  border: none;
-  background-color: rgb(229, 229, 255);
-  border-style:groove;
-  
-
-}
-.search-btn, .link-btn{
-  border: none;
-  background-color: white;
-  cursor: pointer;
-  
-}
-.header-bottom {
-  display: grid;
-  grid-area: bottom;
-  grid-template-columns: repeat(2,1fr);
-}
-
-
-.top-links {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-}
-
-.user-info {
-  display: grid;
-  margin-left: 3rem;
-  grid-template-columns:100px 300px;
-}
-
-.user-output {
-  font-weight: bold;
-}
-.text-2 {
-  font-size: 1.1rem;
-}
-.buttons {
-  display: grid;
-  height: 2em;
-  gap: 10px;
-  grid-template-columns: repeat(3,5rem);
-  align-self: center;
-  margin-left: 5rem;
-}
-.btn-btn {
-  background-color: rgb(104, 104, 255);
-  color: white;
-  font-weight: bold;
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
-}
-
-
-
-
-/* Main content */
-.main-container {
-  display: grid;
-  background-color: rgb(220, 220, 255);
-  grid-area: main;
-  grid-template-columns: 51em 1fr;
-  grid-template-areas: 
-  'cards main-sidebar';
-}
-.main-cards {
-  /* border: 1px solid black; */
-  display: grid;
-  grid-area: cards;
-  grid-template-columns: 1fr;
-  grid-template-rows: 3em 1fr;
-  grid-template-areas: 
-  'tittle'
-  'main';
-}
-.main-heading {
-  grid-area: tittle;
-  padding: 0;
-  margin: 0;
+.dashboard-container {
   font-size: 1.5rem;
   font-weight: bold;
 }
-.card-holder {
+.dash-section1 {
   display: grid;
-  grid-area: main;
-  gap: 40px;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(2,1fr);
-  grid-auto-rows: 2,1fr;
-  margin: 10px;
-}
-.main-sb {
-  /* border: 1px solid rgb(255, 0, 0); */
-  display: grid;
-  grid-template-rows: repeat(2,1fr);
-  grid-area: main-sidebar;
-  
-}
-.card {
-  display: grid;
-  border:  1px solid white;
-  background-color: white;
-  border-radius: 6px;
-  border-left-width: 10px;
-  border-left-color: green;
-  grid-template-rows: 2em 1fr 1fr;
-  grid-template-areas: 
-  'card-top'
-  'card-middle'
-  'card-bottom';
-
-
-}
-.card-heading {
+  row-gap: 10px;
+  grid-area: b;
   font-weight: bold;
-  grid-area: card-top;
 }
-.card-body {
-  grid-area: card-middle;
-}
-.card-btns {
+.dash-section2 {
   display: grid;
-  grid-area: card-bottom;
-  grid-template-columns: repeat(3,1fr);
-
+  grid-area: c;
+  font-weight: bold;
 }
-.btn-1, .btn-2, .btn-3 {
+
+/* The heading of the page starts here
+
+*/
+.header-container {
+  background-color: white;
+  display: grid;
+  grid-area: heading;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 40% 60%;
+  grid-template-areas:
+    "search links"
+    "user-info buttons";
+}
+.header-search {
+  align-items: center;
+  display: grid;
+  grid-area: search;
+  grid-template-columns: 10% 1fr;
+}
+.search-button {
+  margin-top: 10px;
   background-color: white;
   border: none;
   cursor: pointer;
 }
-.sb-1 {
-  display: grid;
-  grid-template-rows: 1em 1fr;
+.search-image {
+  height: 25px;
 }
-.sb-card{
-  border: 1px solid black;
+.search-input {
+  background-color: rgb(189, 190, 190);
+  width: 30em;
+  height: 2em;
+  border: none;
+  border-radius: 16px;
+  border-style: groove;
 }
 
+.header-top-right {
+  display: grid;
+  grid-area: links;
+  grid-template-columns: repeat(3, 30%);
+  align-self: center;
+  margin-left: 15em;
+}
+.bell-button {
+  width: 3.5em;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+.bell-image {
+  height: 2em;
+}
+.header-name {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.header-bottom-left {
+  padding: 0;
+
+  align-items: center;
+  display: grid;
+  grid-area: user-info;
+  grid-template-columns: 20% 40%;
+}
+.user-logo-large {
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+
+.intro {
+  font-weight: bold;
+  margin: 0;
+}
+.user-name {
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+.header-bottom-right {
+  display: grid;
+  gap: 3em;
+  grid-area: buttons;
+  grid-template-columns: repeat(3, 15%);
+}
+.header-button {
+  background-color: rgb(130, 130, 255);
+  border: none;
+  border-radius: 16px;
+  height: 3em;
+  width: 8em;
+  color: white;
+  font-weight: bold;
+  margin-left: 18em;
+  cursor: pointer;
+}
+/* The main container starts here 
+
+*/
+.main-container {
+  background-color: rgb(187, 198, 221);
+  display: grid;
+  grid-area: main;
+  grid-template-rows: 10% 90%;
+  grid-template-areas:
+    "main-header"
+    "main-cards";
+}
+.main-header {
+  font-weight: bold;
+  font-size: 1.5rem;
+  grid-area: main-header;
+}
+.main-card {
+  display: grid;
+
+  grid-area: main-cards;
+  grid-template-columns: repeat(3, 32.5%);
+  grid-template-rows: repeat(auto-fill, 50%);
+}
+.card-container {
+  margin-left: 1em;
+  background-color: azure;
+  width: 90%;
+  height: 90%;
+  display: grid;
+  border: 1px solid rgb(178, 198, 221);
+  border-left-width: 0.5rem;
+  border-radius: 6px;
+  border-left-color: green;
+}
+.card-button-image {
+  height: 1.5rem;
+}
+.card-bttons {
+  margin-left: 13em;
+}
+.button1 {
+  background-color: azure;
+  border: none;
+  cursor: pointer;
+}
+.card-header {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+.card-body {
+  padding: 10px;
+}
+/* The announcement container start here 
+
+*/
+.announce-container {
+  display: grid;
+  background-color: rgb(72, 72, 255);
+  grid-area: announce;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "card1 ."
+    ". card2";
+}
+.ann-card-container {
+  text-align: center;
+  display: grid;
+  grid-area: card1;
+  background-color: azure;
+  grid-template-rows: repeat(3, 1fr);
+  border-radius: 6px;
+  padding: 0;
+  margin-left: 1em;
+}
+.section1-heading {
+  font-weight: bold;
+}
+.card-body {
+  font-size: 0.8rem;
+  border-bottom: 1px solid black;
+}
+.card-title {
+  font-weight: bold;
+}
+.ann-section2 {
+  grid-area: card2;
+}
+.ann-card-container2 {
+  display: grid;
+  background-color: azure;
+  border-radius: 6px;
+  grid-template-rows: repeat(4, 5em);
+  margin-right: 2em;
+  grid-template-areas:
+    "trend1"
+    "trend2"
+    "trend3"
+    "trend4";
+}
+.trend-card1 {
+  display: grid;
+
+  align-items: center;
+  grid-area: trend1;
+}
+.trend-card2 {
+  display: grid;
+
+  grid-area: trrend2;
+}
+.trend-card3 {
+  grid-area: trend3;
+}
+.trend-card4 {
+  grid-area: trend4;
+}

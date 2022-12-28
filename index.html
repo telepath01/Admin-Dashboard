@@ -8,212 +8,303 @@
     <title>Admin Page</title>
   </head>
   <body>
-    <div class="admin-container">
-      <!-- Sidebar Content 
-      
-      -->
+    <div class="page-block">
       <div class="sidebar-container">
-        <div class="sb-items">
-          <p class="dash">
-            <img class="sb-img" src="/resources/images/dashboard.png" />
-            Dashboard
-          </p>
-          <div class="section1">
-            <div class="sb-item">
-              <img class="sb-img" src="/resources/images/home-circle.png" />
-              Home
-            </div>
-            <div class="sb-item">
-              <img
-                class="sb-img"
-                src="/resources/images/card-account-details-outline.png"
-              />
-              Profile
-            </div>
-            <div class="sb-item">
-              <img class="sb-img" src="/resources/images/comment-outline.png" />
-              Message
-            </div>
-            <div class="sb-item">
-              <img class="sb-img" src="/resources/images/history.png" /> History
-            </div>
-            <div class="sb-item">
-              <img class="sb-img" src="/resources/images/calendar.png" /> Tasks
-            </div>
-            <div class="sb-item">
-              <img
-                class="sb-img"
-                src="/resources/images/account-multiple-outline.png"
-              />
-              Community
-            </div>
+        <div class="sidbar-heading">
+          <div class="dashboard-container">
+            <img
+              class="dash-image"
+              src="/resources/images/dashboard.png"
+            />Dashboard
           </div>
-          <div class="section2">
-            <div class="sb-item">
-              <img class="sb-img" src="/resources/images/cog.png" /> Settings
-            </div>
-            <div class="sb-item">
-              <img class="sb-img" src="/resources/images/face-agent.png" />
-              Support
-            </div>
-            <div class="sb-item">
-              <img class="sb-img" src="/resources/images/shield-account.png" />
-              Privacy
-            </div>
+        </div>
+        <div class="dash-section1">
+          <div class="sidebar-section1">
+            <img
+              class="sidebar-image"
+              src="/resources/images/home-circle.png"
+            />Home
+          </div>
+          <div class="sidebar-section1">
+            <img
+              class="sidebar-image"
+              src="/resources/images/card-account-details-outline.png"
+            />Profile
+          </div>
+          <div class="sidebar-section1">
+            <img
+              class="sidebar-image"
+              src="/resources/images/comment-outline.png"
+            />Message
+          </div>
+          <div class="sidebar-section1">
+            <img
+              class="sidebar-image"
+              src="/resources/images/history.png"
+            />History
+          </div>
+          <div class="sidebar-section1">
+            <img
+              class="sidebar-image"
+              src="/resources/images/calendar.png"
+            />Tasks
+          </div>
+          <div class="sidebar-section1">
+            <img
+              class="sidebar-image"
+              src="/resources/images/account-multiple-outline.png"
+            />Community
+          </div>
+        </div>
+        <div class="dash-section2">
+          <div class="sidebar-section2">
+            <img
+              class="sidebar-image"
+              src="/resources/images/cog.png"
+            />Settings
+          </div>
+          <div class="sidebar-section2">
+            <img
+              class="sidebar-image"
+              src="/resources/images/face-agent.png"
+            />Support
+          </div>
+          <div class="sidebar-section2">
+            <img
+              class="sidebar-image"
+              src="/resources/images/shield-account.png"
+            />Privacy
           </div>
         </div>
       </div>
-      <!-- Header content
-      
-      -->
       <div class="header-container">
-        <div class='header-top'>
-          <div class="search-input"><label for="search"><button class="search-btn"><img class="header-img" src="/resources/images/magnify.png"/></button></label> <input type="search" id="search" name="user-search" /></div>
-          <div class="top-links">
-            <div class="link"><button class="link-btn"><img class="header-img" src="/resources/images/bell-ring-outline.png"/></button></div>
-            <div class="link"><button class="link-btn">User Image</button></div>
-            <div class="user-name"><a class="user-link">Morgan Oakley</a></div>
+        <div class="header-search">
+          <button class="search-button">
+            <img
+              class="search-image"
+              src="/resources/images/magnify.png"
+            /></button
+          ><input class="search-input" type="search" name="user-search" />
+        </div>
+        <div class="header-top-right">
+          <button class="bell-button">
+            <img
+              class="bell-image"
+              src="/resources/images/bell-ring-outline.png"
+            />
+          </button>
+          <div class="logo">Logo Image</div>
+          <div class="header-name">Morgan Oakley</div>
+        </div>
+        <div class="header-bottom-left">
+          <image
+            class="user-logo-large"
+            src="/resources/images/bell-ring-outline.png"
+          />
+          <div class="user-container">
+            <p class="intro">Hello there,</p>
+            <p class="user-name">Morgan Okley (@morgan)</p>
           </div>
         </div>
-        <div class="header-bottom">
-          <div class="user-info">
-            <div class="user-img">User Image</div>
-            <div class="user-output">
-              <p class="text-1">Hello there,</p>
-              <p class="text-2">Morgan Okley (@morgan)</p>
-            </div>
-          </div>
-          <div class="buttons">
-            <button class="btn-btn">New</button>
-            <button class="btn-btn">Upload</button>
-            <button class="btn-btn">Share</button>
-          </div>
+        <div class="header-bottom-right">
+          <button class="header-button">New</button>
+          <button class="header-button">Upload</button>
+          <button class="header-button">Share</button>
         </div>
       </div>
-      <!-- Main Container
-      
-      -->
       <div class="main-container">
-        <div class="main-cards">
-          
-            <!-- Template for cards
-            <div class="card">
-              <div class="card-heading"><p>Some Text</p></div>
-            <div class="card-body"><p>Some Text</p></div>
-            <div class="card-btns">
-              <button class="btn-1">Star</button>
-              <button class="btn-2">Eye</button>
-              <button class="btn-3">Fork</button>
-            </div> 
-          
-          -->
-          <p class="main-heading">Projects</p>
-          <div class="card-holder">
-
-          <div class="card">
-            <div class="card-heading"><p>Super Cool Project</p></div>
-            <div class="card-body"><p>This is just filler text. When text is available please input text in this container.Again this is just filler text, no need to pay attention to what is said.</p></div>
-            <div class="card-btns">
-              <button class="btn-1"> <img class="main-img" src="/resources/images/star-plus.png"/></button>
-              <button class="btn-2"><img class="main-img" src="/resources/images/eye-plus.png"/></button>
-              <button class="btn-3"><img class="main-img" src="/resources/images/source-fork.png"/></button>
+        <div class="main-header">Projects</div>
+        <div class="main-card">
+          <div class="card-container">
+            <div class="card-header">Super Cool Project</div>
+            <div class="card-body">
+              This is just a fill are. please place you rinfomration in the
+              card. Again this area is just a fill please fill the infomration
+              needed within the card.
+            </div>
+            <div class="card-bttons">
+              <button class="button1">
+                <img class="card-button-image"
+                src="/resources/images/star-plus.png"
+              </button>
+              <button class="button1">
+                <img class="card-button-image"
+                src="/resources/images/eye-plus.png"
+              </button>
+              <button class="button1">
+                <img class="card-button-image"
+                src="/resources/images/source-fork.png"
+              </button>
             </div>
           </div>
-          <div class="card">
-            <div class="card-heading"><p>Less Cool Project</p></div>
-            <div class="card-body"><p>This is just filler text. When text is available please input text in this container.Again this is just filler text, no need to pay attention to what is said.</p></div>
-            <div class="card-btns">
-              <button class="btn-1"> <img class="main-img" src="/resources/images/star-plus.png"/></button>
-              <button class="btn-2"><img class="main-img" src="/resources/images/eye-plus.png"/></button>
-              <button class="btn-3"><img class="main-img" src="/resources/images/source-fork.png"/></button>
+          <div class="card-container">
+            <div class="card-header">Less Cool Project</div>
+            <div class="card-body">
+              This is just a fill are. please place you rinfomration in the
+              card. Again this area is just a fill please fill the infomration
+              needed within the card.
+            </div>
+            <div class="card-bttons">
+              <button class="button1">
+                <img class="card-button-image"
+                src="/resources/images/star-plus.png"
+              </button>
+              <button class="button1">
+                <img class="card-button-image"
+                src="/resources/images/eye-plus.png"
+              </button>
+              <button class="button1">
+                <img class="card-button-image"
+                src="/resources/images/source-fork.png"
+              </button>
             </div>
           </div>
-          <div class="card">
-            <div class="card-heading"><p>Impossible App</p></div>
-            <div class="card-body"><p>This is just filler text. When text is available please input text in this container.Again this is just filler text, no need to pay attention to what is said.</p></div>
-            <div class="card-btns">
-              <button class="btn-1"> <img class="main-img" src="/resources/images/star-plus.png"/></button>
-              <button class="btn-2"><img class="main-img" src="/resources/images/eye-plus.png"/></button>
-              <button class="btn-3"><img class="main-img" src="/resources/images/source-fork.png"/></button>
+          <div class="card-container">
+            <div class="card-header">Impossible App</div>
+            <div class="card-body">
+              This is just a fill are. please place you rinfomration in the
+              card. Again this area is just a fill please fill the infomration
+              needed within the card.
+            </div>
+            <div class="card-bttons">
+              <button class="button1">
+                <img class="card-button-image"
+                src="/resources/images/star-plus.png"
+              </button>
+              <button class="button1">
+                <img class="card-button-image"
+                src="/resources/images/eye-plus.png"
+              </button>
+              <button class="button1">
+                <img class="card-button-image"
+                src="/resources/images/source-fork.png"
+              </button>
             </div>
           </div>
-          <div class="card">
-            <div class="card-heading"><p>Easy Peasy App</p></div>
-            <div class="card-body"><p>This is just filler text. When text is available please input text in this container.Again this is just filler text, no need to pay attention to what is said.</p></div>
-            <div class="card-btns">
-              <button class="btn-1"> <img class="main-img" src="/resources/images/star-plus.png"/></button>
-              <button class="btn-2"><img class="main-img" src="/resources/images/eye-plus.png"/></button>
-              <button class="btn-3"><img class="main-img" src="/resources/images/source-fork.png"/></button>
+          <div class="card-container">
+            <div class="card-header">Easy Peasy App</div>
+            <div class="card-body">
+              This is just a fill are. please place you rinfomration in the
+              card. Again this area is just a fill please fill the infomration
+              needed within the card.
+            </div>
+            <div class="card-bttons">
+              <button class="button1">
+                <img class="card-button-image"
+                src="/resources/images/star-plus.png"
+              </button>
+              <button class="button1">
+                <img class="card-button-image"
+                src="/resources/images/eye-plus.png"
+              </button>
+              <button class="button1">
+                <img class="card-button-image"
+                src="/resources/images/source-fork.png"
+              </button>
             </div>
           </div>
-          <div class="card">
-            <div class="card-heading"><p>Add Blocker</p></div>
-            <div class="card-body"><p>This is just filler text. When text is available please input text in this container.Again this is just filler text, no need to pay attention to what is said.</p></div>
-            <div class="card-btns">
-              <button class="btn-1"> <img class="main-img" src="/resources/images/star-plus.png"/></button>
-              <button class="btn-2"><img class="main-img" src="/resources/images/eye-plus.png"/></button>
-              <button class="btn-3"><img class="main-img" src="/resources/images/source-fork.png"/></button>
+          <div class="card-container">
+            <div class="card-header">Ad Blocker</div>
+            <div class="card-body">
+              This is just a fill are. please place you rinfomration in the
+              card. Again this area is just a fill please fill the infomration
+              needed within the card.
+            </div>
+            <div class="card-bttons">
+              <button class="button1">
+                <img class="card-button-image"
+                src="/resources/images/star-plus.png"
+              </button>
+              <button class="button1">
+                <img class="card-button-image"
+                src="/resources/images/eye-plus.png"
+              </button>
+              <button class="button1">
+                <img class="card-button-image"
+                src="/resources/images/source-fork.png"
+              </button>
             </div>
           </div>
-          <div class="card">
-            <div class="card-heading"><p>Money Maker</p></div>
-            <div class="card-body"><p>This is just filler text. When text is available please input text in this container.Again this is just filler text, no need to pay attention to what is said.</p></div>
-            <div class="card-btns">
-              <button class="btn-1"> <img class="main-img" src="/resources/images/star-plus.png"/></button>
-              <button class="btn-2"><img class="main-img" src="/resources/images/eye-plus.png"/></button>
-              <button class="btn-3"><img class="main-img" src="/resources/images/source-fork.png"/></button>
+          <div class="card-container">
+            <div class="card-header">Money Maker</div>
+            <div class="card-body">
+              This is just a fill are. please place you rinfomration in the
+              card. Again this area is just a fill please fill the infomration
+              needed within the card.
             </div>
-          </div>
-          
-      </div>
-          </div>
-          <div class="main-sb">
-            <div class="sb-1">
-              <div class="sb-heading">Announcements</div>
-              <div class="sb-card">
-                <dev class="sb-card-continer">
-                <p class="sb-card-heading">Site Maintenance</p>
-                <p class="sb-card-section">Filler text, when text is available please ensure it is put in this block</p>
-              </dev>
-                <dev class="sb-card-continer">
-                <p class="sb-card-heading">Community Share Day</p>
-                <p class="sb-card-section">Filler text, when text is available please ensure it is put in this block</p>
-              </dev>
-                <dev class="sb-card-continer">
-                <p class="sb-card-heading">Update Privacey Policy</p>
-                <p class="sb-card-section">Filler text, when text is available please ensure it is put in this block</p>
-              </dev>
-              </div>
-            </div>
-            <div class="sb-2">
-              <div class="sb-heading">Trending</div>
-              <div class="tren-card">
-                <dev class="tren-card-continer">
-                <button class="tren-btn">Image</button>
-                <p class="tren-name">@tegan</p>
-                <p class="tren-subject">World Peace Builder</p>
-              </dev>
-                <dev class="sb-card-continer">
-                  <button class="tren-btn">Image</button>
-                  <p class="tren-name">@morgan</p>
-                  <p class="tren-subject">Super Cool Project</p>
-              </dev>
-                <dev class="sb-card-continer">
-                  <button class="tren-btn">Image</button>
-                  <p class="tren-name">@kendall</p>
-                  <p class="tren-subject">Life Changing App</p>
-              </dev>
-                <dev class="sb-card-continer">
-                  <button class="tren-btn">Image</button>
-                  <p class="tren-name">@alex</p>
-                  <p class="tren-subject">No Traffic Maker</p>
-              </dev>
-              </div>
+            <div class="card-bttons">
+              <button class="button1">
+                <img class="card-button-image"
+                src="/resources/images/star-plus.png"
+              </button>
+              <button class="button1">
+                <img class="card-button-image"
+                src="/resources/images/eye-plus.png"
+              </button>
+              <button class="button1">
+                <img class="card-button-image"
+                src="/resources/images/source-fork.png"
+              </button>
             </div>
           </div>
         </div>
-        
-      
+      </div>
+      <div class="announce-container">
+        <div class="ann-section1">
+          <div class="section1-heading">Announcements</div>
+          <div class="ann-card-container">
+            <div class="card1">
+              <p class="card-title">Site Maintenance</p>
+              <p class="card-body">
+                This is just filler information, please fill in on a later date.
+              </p>
+            </div>
+            <div class="card2">
+              <p class="card-title">Community Share Day</p>
+              <p class="card-body">
+                This is just filler information, please fill in on a later date.
+              </p>
+            </div>
+            <div class="card3">
+              <p class="card-title">Updated Privacy Policy</p>
+              <p class="card-body">
+                This is just filler information, please fill in on a later date.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="ann-section2">
+          <div class="section2-heading">Trending</div>
+          <div class="ann-card-container2">
+            <div class="trend-card1">
+              <img class="trend-image"/> <!-- Place image here -->
+              <div class="trend-user-tag">
+                <p class="user-tag">@tegan</p>
+                <p class="user-project">World Peace Builder</p>
+              </div>
+            <div class="trend-card1">
+              <img class="trend-image"/> <!-- Place image here -->
+              <div class="trend-user-tag">
+                <p class="user-tag">@morgan</p>
+                <p class="user-project">Super Cool Project</p>
+              </div>
+            <div class="trend-card1">
+              <img class="trend-image"/> <!-- Place image here -->
+              <div class="trend-user-tag">
+                <p class="user-tag">@kendall</p>
+                <p class="user-project">Life Changing App</p>
+              </div>
+            <div class="trend-card1">
+              <img class="trend-image"/> <!-- Place image here -->
+              <div class="trend-user-tag">
+                <p class="user-tag">@alex</p>
+                <p class="user-project">No Traffic Maker</p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
